@@ -11,3 +11,5 @@ com.typesafe.sbt.SbtScalariform.scalariformSettings
 PlayKeys.routesImport += "binders.PathBinders._"
 
 PlayKeys.routesImport += "binders.QueryStringBinders._"
+
+libraryDependencies += filters

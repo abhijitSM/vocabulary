@@ -8,7 +8,6 @@ object PathBinders {
   implicit object LangPathBindable extends PathBindable[Lang] {
 
     override def bind(key: String, value: String): Either[String, Lang] = {
-      println(s"BIND = key : ${key}, value : ${value}")
       Lang.get(value).toRight(s"Language $value is not recognized")
     }
 
